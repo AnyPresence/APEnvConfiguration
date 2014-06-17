@@ -14,8 +14,9 @@ Sits on top of [DBEnvironmentConfiguration](https://github.com/DavidBenko/DBEnvi
 ![alt tag](https://github.com/DavidBenko/APEnvConfiguration/raw/master/linking.png)
  
 ##### Manual Installation
-- Add `DBEnvironmentConfiguration` folder to your project
-- Import header (`#import "DBEnvironmentConfiguration"`)
+- Add **DBEnvironmentConfiguration** class
+- Add `APEnvConfiguration` folder to your project
+- Import header (`#import "APEnvConfiguration"`)
 
 There are 2 required keys in your `environments` file. 
 - `base_url`
