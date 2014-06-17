@@ -14,7 +14,7 @@ Super-simple environment configuration for iOS apps. Switch between environments
   s.platform     = :ios
   s.requires_arc = true
   
-  s.dependency = 'DBEnvironmentConfiguration'
+  s.dependency 'DBEnvironmentConfiguration'
 
   s.source_files = 'APEnvConfiguration/**/*.{h,m}'
 end
