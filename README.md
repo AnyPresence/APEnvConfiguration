@@ -27,15 +27,15 @@ There are 2 required keys in your `environments` file.
 {
     "Development": {
         "base_url": "https://dev.mycompany.com",
-        "api_version": "5"
+        "api_version": "v5"
     },
     "Staging": {
         "base_url": "https://stage.mycompany.com",
-        "api_version": "3"
+        "api_version": "v3"
     },
     "Production": {
         "base_url": "https://mycompany.com",
-        "api_version": "3"
+        "api_version": "v3"
     }
 }
 
