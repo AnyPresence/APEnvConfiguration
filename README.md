@@ -3,6 +3,20 @@ APEnvConfiguration
 
 Sits on top of [DBEnvironmentConfiguration](https://github.com/DavidBenko/DBEnvironmentConfiguration) for use with the [AnyPresence](http://anypresence.com) iOS SDK
 
+### Installation
+
+##### Via CocoaPods
+- Add `pod 'APEnvConfiguration', :git => 'https://github.com/DavidBenko/APEnvConfiguration.git'` to your podfile
+- Run `pod install`
+- Import header (`#import <APEnvConfiguration/APEnvConfiguration.h>`)
+- Link pod against `APSDK.framework`
+
+![alt tag](https://github.com/DavidBenko/APEnvConfiguration/raw/master/linking.png)
+ 
+##### Manual Installation
+- Add `DBEnvironmentConfiguration` folder to your project
+- Import header (`#import "DBEnvironmentConfiguration"`)
+
 There are 2 required keys in your `environments` file. 
 - `base_url`
 - `api_version`
