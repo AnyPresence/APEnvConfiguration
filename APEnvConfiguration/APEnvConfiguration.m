@@ -12,8 +12,34 @@
 #import <APSDK/AuthManager+Protected.h>
 
 @implementation APEnvConfiguration
+
++ (void)initialize
+{
+	[super initialize];
+    setAPConfig();
+    setAuthConfig();
+}
+
 + (void)setEnvironment:(NSString *)environment{
     [super setEnvironment:environment];
+    setAPConfig();
+    setAuthConfig();
+}
+
++ (void)setEnvironmentDetection:(BOOL)envDetect{
+	[super setEnvironmentDetection:envDetect];
+    setAPConfig();
+    setAuthConfig();
+}
+
++ (void)setEnvironmentMapping:(NSDictionary *)mapping{
+	[super setEnvironmentMapping:mapping];
+    setAPConfig();
+    setAuthConfig();
+}
+
++ (void)setEnvironment:(NSString *)environment forBuildType:(DBBuildType)buildType{
+	[super setEnvironment:environment forBuildType:buildType];
     setAPConfig();
     setAuthConfig();
 }
