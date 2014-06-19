@@ -14,8 +14,9 @@ Sits on top of [DBEnvironmentConfiguration](https://github.com/DavidBenko/DBEnvi
 ![alt tag](https://github.com/DavidBenko/APEnvConfiguration/raw/master/linking.png)
  
 ##### Manual Installation
-- Add `DBEnvironmentConfiguration` folder to your project
-- Import header (`#import "DBEnvironmentConfiguration"`)
+- Add **DBEnvironmentConfiguration** class
+- Add `APEnvConfiguration` folder to your project
+- Import header (`#import "APEnvConfiguration"`)
 
 There are 2 required keys in your `environments` file. 
 - `base_url`
@@ -26,15 +27,15 @@ There are 2 required keys in your `environments` file.
 {
     "Development": {
         "base_url": "https://dev.mycompany.com",
-        "api_version": "5"
+        "api_version": "v5"
     },
     "Staging": {
         "base_url": "https://stage.mycompany.com",
-        "api_version": "3"
+        "api_version": "v3"
     },
     "Production": {
         "base_url": "https://mycompany.com",
-        "api_version": "3"
+        "api_version": "v3"
     }
 }
 
