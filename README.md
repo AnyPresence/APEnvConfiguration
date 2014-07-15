@@ -6,12 +6,12 @@ Sits on top of [DBEnvironmentConfiguration](https://github.com/DavidBenko/DBEnvi
 ### Installation
 
 ##### Via CocoaPods
-- Add `pod 'APEnvConfiguration', :git => 'https://github.com/DavidBenko/APEnvConfiguration.git'` to your podfile
+- Add `pod 'APEnvConfiguration', :git => 'https://github.com/AnyPresence/APEnvConfiguration.git'` to your podfile
 - Run `pod install`
 - Import header (`#import <APEnvConfiguration/APEnvConfiguration.h>`)
 - Link pod against `APSDK.framework`
 
-![alt tag](https://github.com/DavidBenko/APEnvConfiguration/raw/master/linking.png)
+![alt tag](https://github.com/AnyPresence/APEnvConfiguration/raw/master/linking.png)
  
 ##### Manual Installation
 - Add **DBEnvironmentConfiguration** class
