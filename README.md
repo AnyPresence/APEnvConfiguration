@@ -47,7 +47,7 @@ There are 2 required keys in your `environments` file.
 
 Calling `setEnvironment` will take care of calling the following AP methods:
 
-- APObject `+setBaseURL:`
+- AnyPresenceAPI `+setBaseURL:`
 - AuthManager `-setSignInURL:`
 - AuthManager `-setSignOutURL:`
  
