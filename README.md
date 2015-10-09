@@ -35,7 +35,10 @@ There are 2 required keys in your `environments` file.
     },
     "Production": {
         "base_url": "https://mycompany.com",
-        "api_version": "v3"
+        "api_version": "v3",
+        "certificate-pinned":true,
+        "certificate":"ssl-production",
+        "certificate-extension":"crt"
     }
 }
 
