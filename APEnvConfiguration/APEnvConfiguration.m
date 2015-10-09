@@ -55,7 +55,12 @@
 }
 
 void setAPConfig(){
-    [APObject setBaseURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/api/%@/",[APEnvConfiguration valueForKey:@"base_url"],[APEnvConfiguration valueForKey:@"api_version"]]]];
+    if([APEnvConfiguration valueForKey:@"certificate-pinned"].boolValue){
+        [AnyPresenceAPI setBaseURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/api/%@/",[APEnvConfiguration valueForKey:@"base_url"],[APEnvConfiguration valueForKey:@"api_version"]]] withSSLCertificatePath:[[NSBundle mainBundle] pathForResource:[APEnvConfiguration valueForKey:@"certificate"] ofType:[APEnvConfiguration valueForKey:@"certificate-extension"]]];
+    }
+    else {
+        [AnyPresenceAPI setBaseURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/api/%@/",[APEnvConfiguration valueForKey:@"base_url"],[APEnvConfiguration valueForKey:@"api_version"]]]];
+    }
 }
 
 void setAuthConfig(){
