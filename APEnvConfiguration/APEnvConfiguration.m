@@ -10,6 +10,7 @@
 #import <APSDK/APObject+Remote.h>
 #import <APSDK/AuthManager.h>
 #import <APSDK/AuthManager+Protected.h>
+#import <APSDK/AnyPresenceAPI.h>
 
 @implementation APEnvConfiguration
 
